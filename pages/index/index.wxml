@@ -1,0 +1,20 @@
+<swiper 
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}" 
+  circular="{{true}}"
+  class="swiper"
+>
+  <block wx:for="{{arr}}">
+    <swiper-item class="item"> 
+            <image src="{{item}}" class="slide-image" width="100%"/> 
+    </swiper-item>
+  </block>
+</swiper>
+<view class="title">课程列表</view>
+<view class="list" wx:for="{{list}}" bindtap="navTo" id="{{item.id}}">
+  <image src="{{item.url}}"></image>
+  <div>{{item.text}}</div>
+  <p>{{item.content}}</p>
+</view>

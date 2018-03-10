@@ -1,0 +1,16 @@
+<!--pages/js/js.wxml-->
+<view class="video-wrap">
+  <video class="video" src="{{src}}" controls="true"></video>
+</view>
+<view class="box">
+  <view class="class-list" wx:for="{{list}}">
+    <p 
+      bindtap="vClick" 
+      id="{{item.link}}" 
+      data-id="{{item.index}}" style="{{item.index == id ? 'color:red' : ''}}"
+    >
+      <span>{{item.index}}. </span>
+      {{item.text}}
+    </p>
+  </view>
+</view>

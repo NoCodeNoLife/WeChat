@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/angular/angular",
+    "pages/vue/vue",
+    "pages/react/react",
+    "pages/js/js",
+    "pages/node/node",
+    "pages/es6/es6"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "JavaScript秘密花园",
+    "navigationBarTextStyle":"white"
+  }
+}
